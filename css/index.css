@@ -1,6 +1,6 @@
 #banner {
     margin-top: 60px;
-    background-image: url('../img/product/banner.jpg');
+    background-image: url('../img/trang_chu/banner.jpg');
     height: 900px;
 }
 
@@ -121,24 +121,29 @@
     left: calc(100% + 10px);
 }
 
-#about_us {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
-        url('../img/product/banner_about-us.jpg');
+#about-us {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../img/ve-chung-toi/bg-about-us.jpg);
 }
+
 
 #about-us .about-us-top {
     padding: 96px;
     color: #fff;
 }
+
 #about-us h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
+    /* color: #2c2e53; */
     margin-bottom: 2rem;
 }
+
+
 #about-us h2::after {
-    content: "";
+    content: '';
     height: 8px;
     width: 162px;
     position: absolute;
@@ -147,6 +152,7 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+
 #about-us .about-us-bottom h2 {
     color: #fff;
 }
