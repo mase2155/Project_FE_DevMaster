@@ -1,0 +1,152 @@
+#banner {
+    margin-top: 60px;
+    background-image: url('../img/product/banner.jpg');
+    height: 900px;
+}
+
+#banner .banner-content {
+    padding-top: 200px;
+    padding-left: 50px;
+
+}
+
+#banner .banner-content h2,
+#banner .banner-content h2>span {
+    font-family: 'Gotham-Ultra';
+    font-size: 46px;
+}
+
+#banner .banner-content p {
+    width: 552px;
+    text-align: justify;
+}
+
+#banner .banner-content button {
+    background-color: #bd945f;
+    padding: 1.5rem 2rem;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    font-size: 1.25rem;
+    color: #fff;
+    border: 0;
+}
+
+#category {
+    background-color: #f3f3f3;
+    height: 560px;
+}
+
+#category .container {
+    position: relative;
+}
+
+#category .container>div {
+    position: absolute;
+    background-color: #fff;
+    top: -60px;
+}
+
+#category .category-box {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+
+
+#category .category-img {
+    max-width: 178px;
+    margin: auto;
+}
+
+#category .category-box a {
+    font-family: 'Gotham-Ultra';
+    color: #2c2e53;
+}
+
+
+#product {
+    background-color: #f3f3f3;
+}
+
+#product h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    color: #2c2e53;
+    margin-bottom: 2rem;
+}
+
+
+#product h2::after {
+    content: '';
+    height: 8px;
+    width: 162px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+
+#product .product-box {
+    max-width: 270px;
+    margin: 0 1rem;
+}
+
+#product .product-list {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#product .product-list .slick-arrow {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #bd945f;
+    color: #fff;
+    top: 30%;
+}
+
+#product .product-list .slick-prev {
+    right: calc(100% + 10px);
+}
+
+#product .product-list .slick-next {
+    left: calc(100% + 10px);
+}
+
+#about_us {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)),
+        url('../img/product/banner_about-us.jpg');
+}
+
+#about-us .about-us-top {
+    padding: 96px;
+    color: #fff;
+}
+#about-us h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+#about-us h2::after {
+    content: "";
+    height: 8px;
+    width: 162px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+#about-us .about-us-bottom h2 {
+    color: #fff;
+}
