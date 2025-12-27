@@ -121,27 +121,22 @@
     left: calc(100% + 10px);
 }
 
+/* About us */
 #about-us {
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../img/ve-chung-toi/bg-about-us.jpg);
+    height: 1080px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../img/trang_chu/banner-about_us.jpg);
 }
-
-
 #about-us .about-us-top {
     padding: 96px;
     color: #fff;
 }
-
 #about-us h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
-    /* color: #2c2e53; */
     margin-bottom: 2rem;
 }
-
-
 #about-us h2::after {
     content: '';
     height: 8px;
@@ -155,4 +150,96 @@
 
 #about-us .about-us-bottom h2 {
     color: #fff;
+}
+
+#about-us .about-us-bottom row {
+    width: 45px;
+}
+.bg-white {
+    width: 570px;  
+    height: 95px; 
+}
+/* News */
+.news-section .news h2{
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #2c2e53;
+}
+.news-section .news h2::after {
+    content: '';
+    height: 8px;
+    width: 162px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+.news-section .row {
+    display: flex;
+    align-items: stretch; 
+}
+.news-left, .news-left img {
+    height: 100%;
+    width: 100%;
+}
+.news-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+.news-item {
+    display: flex;
+    gap: 30px; 
+}
+.img-news-small img {
+    width: 170px;
+    height: 130px;
+}
+.news-section .news-right .news-item .item-text h3 {
+    color: #bd945f;
+    font-family: 'Gotham-Medium';
+}
+.news-section .news-right .news-item .item-text p {
+    font-family: 'Gotham-Thin';
+}
+.news-section .news-right .news-more a{
+    font-family: 'Gotham-Medium';
+    color: #bd945f;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* Footer */
+.info-company {
+    background-color: #2c2c2c; 
+    padding: 50px 0;           
+    color: white;
+}
+.info-company .container {
+    max-width: 1280px;         
+    margin: 0 auto;            
+    display: flex;             
+    justify-content: space-between; 
+}
+.logo-bo-cong-thuong img {
+    margin-top: 35px;
+    max-width: 150px;         
+}
+.info-company .contact h2,h3 {
+    font-family: 'Gotham-Medium';
+}
+.info-company .contact i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+    margin-right: 8px;
+    display: inline-block;
+}
+.info-company .about-us-footer p {
+    font-family: 'Gotham-Thin';
 }
