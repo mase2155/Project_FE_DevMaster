@@ -3,20 +3,24 @@
     background-image: url('../img/trang_chu/banner.jpg');
     height: 900px;
 }
+
 #banner .banner-content {
     padding-top: 200px;
     padding-left: 50px;
 
 }
+
 #banner .banner-content h2,
 #banner .banner-content h2>span {
     font-family: 'Gotham-Ultra';
     font-size: 46px;
 }
+
 #banner .banner-content p {
     width: 552px;
     text-align: justify;
 }
+
 #banner .banner-content button {
     background-color: #bd945f;
     padding: 1.5rem 2rem;
@@ -26,33 +30,41 @@
     color: #fff;
     border: 0;
 }
+
 #category {
     background-color: #f3f3f3;
     height: 560px;
 }
+
 #category .container {
     position: relative;
 }
+
 #category .container>div {
     position: absolute;
     background-color: #fff;
     top: -60px;
 }
+
 #category .category-box {
     padding-top: 40px;
     padding-bottom: 50px;
 }
+
 #category .category-img {
     max-width: 178px;
     margin: auto;
 }
+
 #category .category-box a {
     font-family: 'Gotham-Ultra';
     color: #2c2e53;
 }
+
 #product {
     background-color: #f3f3f3;
 }
+
 #product h2 {
     text-align: center;
     position: relative;
@@ -61,6 +73,7 @@
     color: #2c2e53;
     margin-bottom: 2rem;
 }
+
 #product h2::after {
     content: '';
     height: 8px;
@@ -71,10 +84,12 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+
 #product .product-box {
     max-width: 270px;
     margin: 0 1rem;
 }
+
 #product .product-list {
     max-width: 1180px;
     margin: auto;
@@ -82,6 +97,7 @@
     justify-content: space-between;
     position: relative;
 }
+
 #product .product-list .slick-arrow {
     position: absolute;
     height: 44px;
@@ -92,12 +108,15 @@
     color: #fff;
     top: 30%;
 }
+
 #product .product-list .slick-prev {
     right: calc(100% + 10px);
 }
+
 #product .product-list .slick-next {
     left: calc(100% + 10px);
 }
+
 /* About us */
 #about-us {
     height: 1180px;
@@ -108,14 +127,17 @@
     padding: 96px;
     color: #fff;
 }
+
 .about-us-top-left-img {
     width: 100%;
     height: 100%;
 }
+
 .about-us-top-left-img img {
     width: 100%;
     height: 100%;
 }
+
 #about-us h2 {
     text-align: center;
     position: relative;
@@ -123,6 +145,7 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
+
 #about-us h2::after {
     content: '';
     height: 8px;
@@ -133,47 +156,54 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+
 #about-us .about-us-bottom h2 {
     color: #fff;
 }
-#about-us .about-us-top h3{
+
+#about-us .about-us-top h3 {
     text-transform: uppercase;
 }
+
 #about-us .about-us-top h3 span {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 26px;
 }
-#about-us .about-us-top p span{
+
+#about-us .about-us-top p span {
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 #about-us .about-us-bottom row {
     width: 45px;
-}
-#about-us .about-us-bottom .bg-white {
-    display: flex;
-    align-items: center;    
-    padding: 20px 24px;
-    gap: 20px;               
 }
 #about-us .about-us-bottom h3 {
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
-    color:#bd945f;
+    color: #bd945f;
     font-weight: bold;
-     margin-left: 23px;
-     font-size: 26px;
+    margin-left: 23px;
+    font-size: 26px;
 }
-#about-us .about-us-bottom p{
+#about-us .about-us-bottom p {
     font-family: 'Gotham-Medium';
     margin-left: 23px;
     font-size: 20px
 }
+#about-us .about-us-bottom .bg-white {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+    width: 550px;
+    height: 110px;
+}
 /* News */
-.news-section .news h2{
+.news-section .news h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
@@ -183,6 +213,7 @@
     font-weight: bold;
     color: #2c2e53;
 }
+
 .news-section .news h2::after {
     content: '';
     height: 8px;
@@ -193,44 +224,59 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+
 .news-section .row {
     display: flex;
-    align-items: stretch; 
+    align-items: stretch;
 }
-.news-left, .news-left img {
+
+.news-left,
+.news-left img {
     height: 100%;
     width: 100%;
 }
+
 .news-right {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     height: 100%;
 }
+
 .news-item {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
 }
+
 .img-news-small img {
     width: 170px;
     height: 130px;
 }
+
 .news-section .news-right .news-item .item-text h3 {
     color: #bd945f;
     font-family: 'Gotham-Medium';
 }
+
 .news-section .news-right .news-item .item-text p {
     font-family: 'Gotham-Thin';
 }
-.news-section .news-right .news-more a{
+
+.news-section .news-right .news-more a {
     font-family: 'Gotham-Medium';
     color: #bd945f;
     margin-top: 30px;
     text-transform: uppercase;
     font-weight: bold;
 }
+
 /* Partner  */
-#partner h2{
+#partner {
+    width: 1920px;
+    height: 300px;
+}
+
+#partner h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
@@ -239,7 +285,8 @@
     font-weight: bold;
     color: #2c2e53;
 }
-#partner h2::after{
+
+#partner h2::after {
     content: '';
     height: 8px;
     width: 162px;
@@ -249,40 +296,114 @@
     transform: translateX(-50%);
     background-color: #bd945f;
 }
+
 #partner .img-logo-partner {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
+
 #partner .img-logo-partner .logo-partner {
     margin-top: 50px;
     margin-right: 55px;
     margin-bottom: 130px;
 }
+
+/* Info Contact */
+#info-contact {
+    background-image: url(../img/trang_chu/banner_info-contact.jpg);
+    width: 1920px;
+    height: 300px;
+}
+
+#info-contact .row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: left;
+    margin-right: 80px;
+}
+
+#info-contact .content-info-contact {
+    position: relative;
+    padding-bottom: 20px;
+    flex: 1;
+    text-align: left;
+    margin-left: 150px;
+}
+
+#info-contact .container .row .content-info-contact h3 {
+    color: #fff;
+    margin-top: 120px;
+    font-family: 'Gotham-Medium';
+    font-size: 26px;
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+#info-contact .container .row .content-info-contact h3 span {
+    font-weight: bold;
+    font-family: 'Gotham-Ultra';
+    font-size: 26px;
+}
+
+#info-contact .content-info-contact {
+    text-align: left !important;
+    display: block !important;
+    padding: 0;
+}
+
+#info-contact .content-info-contact h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 162px;
+    height: 8px;
+    background-color: #fff;
+}
+
+#info-contact .form-info-contact input {
+    width: 300px;
+    height: 40px;
+}
+#info-contact .form-info-contact button {
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+}
 /* Footer */
 .info-company {
-    background-color: #2c2c2c; 
-    padding: 50px 0;           
+    background-color: #2c2c2c;
+    padding: 50px 0;
     color: white;
 }
+
 .info-company .container {
-    max-width: 1280px;         
-    margin: 0 auto;            
-    display: flex;             
-    justify-content: space-between; 
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+
 .logo-bo-cong-thuong img {
     margin-top: 35px;
-    max-width: 150px;         
+    max-width: 150px;
 }
-.info-company .contact h2,h3 {
+
+.info-company .contact h2,
+h3 {
     font-family: 'Gotham-Medium';
 }
+
 .info-company .contact i {
     font-family: "Font Awesome 6 Free" !important;
     font-weight: 900;
     margin-right: 8px;
     display: inline-block;
 }
+
 .info-company .about-us-footer p {
     font-family: 'Gotham-Thin';
 }
