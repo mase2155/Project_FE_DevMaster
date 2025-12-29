@@ -313,6 +313,7 @@
     background-image: url(../img/trang_chu/banner_info-contact.jpg);
     width: 1920px;
     height: 300px;
+    position: relative;
 }
 
 #info-contact .row {
@@ -372,6 +373,14 @@
     width: 80px;
     height: 40px;
     background-color: #fff;
+}
+.img-chair-decor {
+    position: absolute;
+    top: 0; 
+    left: 35px;
+    bottom: 50px;
+    transform: translateY(-40%); 
+    width: 370px; 
 }
 /* Footer */
 .info-company {
