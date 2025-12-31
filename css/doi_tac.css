@@ -1,0 +1,79 @@
+#banner-doi-tac .banner{
+    margin-top: 140px;
+    background-image: url('../img/doi_tac/banner.jpg');
+    width: 1920px;
+    height: 470px;
+    position: relative;
+}
+#banner-doi-tac .contentOfBanner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+#banner-doi-tac .contentOfBanner img {
+    width: 150px;   
+    margin-bottom: 12px;
+}
+#banner-doi-tac .contentOfBanner h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    color: #fff;
+}
+/*Introduce  */
+#introduce-partner {
+    background-color: #f5f5f5;
+}
+#introduce-partner .container {
+    width: 1280px;
+    height: 1680px;
+    margin-left: 320px;
+    margin-right: 320px;
+    background-color: #fff;
+    padding-top: 100px;
+    position: relative;
+    top: -60px;
+}
+#introduce-partner .item-introduce {
+    display: grid;
+    grid-template-columns: 480px 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#introduce-partner .img-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#introduce-partner .img-item img {
+    max-width: 300px;
+    height: 220px;
+}
+#introduce-partner .content-item h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c9a063;  
+    margin-bottom: 14px;
+    font-family: 'Gotham-Ultra';
+}
+#introduce-partner .content-item p {
+    font-size: 22px;
+    color: #333;
+    font-family: 'Gotham-Medium';
+    margin-right: 60px;
+    color: #3C415E;
+} 
+#introduce-partner {
+    
+
+}
