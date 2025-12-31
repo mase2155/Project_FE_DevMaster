@@ -5,7 +5,7 @@
 }
 #banner-doi-tac .contentOfBanner {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -17,7 +17,7 @@
 }
 #banner-doi-tac .contentOfBanner img {
     width: 150px;   
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 #banner-doi-tac .contentOfBanner h2 {
     font-size: 45px;
