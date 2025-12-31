@@ -60,7 +60,7 @@
     font-family: 'Gotham-Ultra';
     color: #2c2e53;
 }
-
+/* Product */
 #product {
     background-color: #f3f3f3;
 }
@@ -72,6 +72,7 @@
     text-transform: uppercase;
     color: #2c2e53;
     margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 
 #product h2::after {
