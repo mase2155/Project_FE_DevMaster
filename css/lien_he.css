@@ -1,0 +1,33 @@
+#banner-gioi_thieu .imgOfBanner {
+    margin-top: 140px;
+    background-image: url('..//img/gioi_thieu/banner.jpg');
+    width: 100%;
+    height: 470px;
+    position: relative;
+}
+
+#banner-gioi_thieu .contentOfBanner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#banner-gioi_thieu .contentOfBanner img {
+    width: 150px;
+    margin-bottom: 12px;
+}
+
+#banner-gioi_thieu .contentOfBanner h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
+    color: #fff;
+}
