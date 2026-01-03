@@ -1,0 +1,33 @@
+.breadcrumb {
+    padding: 20px 0; /* Khoảng cách trên dưới */
+    font-size: 14px; /* Chữ nhỏ gọn */
+    display: flex;
+    gap: 8px;        /* Khoảng cách giữa chữ và dấu > */
+    align-items: center;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #666;     /* Màu xám nhẹ */
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #b8926a;  /* Đổi màu khi di chuột vào (màu vàng đồng) */
+}
+
+.breadcrumb span {
+    color: #999;     /* Màu cho dấu ngăn cách > */
+}
+
+.breadcrumb a.active {
+    color: #b8926a;  /* Màu cho trang hiện tại */
+    pointer-events: none; /* Không cho click vào trang hiện tại */
+}
+
+#contentOfBaiViet {
+    background-color: #f5f5f5;
+}
+#contentOfBaiViet .container {
+    background-color: #fff;
+}
