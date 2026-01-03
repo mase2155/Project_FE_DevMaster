@@ -1,33 +1,60 @@
-.breadcrumb {
-    padding: 20px 0; /* Khoảng cách trên dưới */
-    font-size: 14px; /* Chữ nhỏ gọn */
-    display: flex;
-    gap: 8px;        /* Khoảng cách giữa chữ và dấu > */
-    align-items: center;
-}
-
-.breadcrumb a {
-    text-decoration: none;
-    color: #666;     /* Màu xám nhẹ */
-    transition: 0.3s;
-}
-
-.breadcrumb a:hover {
-    color: #b8926a;  /* Đổi màu khi di chuột vào (màu vàng đồng) */
-}
-
-.breadcrumb span {
-    color: #999;     /* Màu cho dấu ngăn cách > */
-}
-
-.breadcrumb a.active {
-    color: #b8926a;  /* Màu cho trang hiện tại */
-    pointer-events: none; /* Không cho click vào trang hiện tại */
-}
-
 #contentOfBaiViet {
     background-color: #f5f5f5;
 }
+
 #contentOfBaiViet .container {
     background-color: #fff;
+    padding: 200px 20px;
+    width: 1280px;
+    height: 800px;
+}
+
+#contentOfBaiViet .row {
+    display: flex;
+    align-items: stretch;
+}
+
+#contentOfBaiViet .col-8>h2 {
+    font-family: 'Gotham-Ultra';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #bd945f;
+}
+
+#contentOfBaiViet .col-8>p {
+    font-family: 'Gotham-Medium';
+}
+
+#contentOfBaiViet .col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#contentOfBaiViet .col-4 .item-box {
+    display: flex;
+    gap: 30px;
+    padding: 20px 20px;
+}
+
+#contentOfBaiViet .col-4>h3 {
+    color: #2c2e53;
+    text-transform: uppercase;
+    font-family: 'Gotham-Medium';
+    position: relative;
+    font-size: 22px;
+}
+#contentOfBaiViet .col-4>h3::after{
+    content: '';
+    height: 4px;
+    width: 110px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #bd945f;
+}
+#contentOfBaiViet .col-4 .item-box>p{
+    font-family: 'Gotham-Medium';
+    color: #2c2e53;
 }
