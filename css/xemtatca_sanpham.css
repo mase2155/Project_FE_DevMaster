@@ -61,7 +61,7 @@
 
 
 .menuOfOptions {
-    display: none; /* Mặc định ẩn */
+    display: none; 
     background-color: #fff;
     position: absolute;
     top: 100%; 
