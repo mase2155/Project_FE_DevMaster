@@ -1,7 +1,10 @@
 #content {
     background-color: #f5f5f5;
 }
-
+.banner img{
+    width: 100%;
+    height: auto;
+}
 .optionsOfPrice {
     align-items: center;
     padding: 20px 0;
