@@ -1,0 +1,56 @@
+.ImgBySlick {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Ảnh lớn */
+        .aboutProduct_imgBig {
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .aboutProduct_imgBig img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        /* Nút bấm Next/Prev tùy chỉnh */
+        .slick-prev, .slick-next {
+            z-index: 10;
+            width: 40px;
+            height: 40px;
+            background: #2c3e50 !important; /* Màu xanh đậm như ảnh mẫu */
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+        .slick-prev { left: -20px; }
+        .slick-next { right: -20px; }
+        
+        /* Thay đổi ký hiệu mũi tên (nếu dùng text) */
+        .slick-prev:before, .slick-next:before {
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .slick-prev:before { content: "\f104"; } /* Icon mũi tên trái */
+        .slick-next:before { content: "\f105"; } /* Icon mũi tên phải */
+
+        /* Ảnh nhỏ (Thumbnails) */
+        .aboutProduct_imgThumb .slick-slide {
+            padding: 0 5px;
+            cursor: pointer;
+        }
+        .aboutProduct_imgThumb img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: 0.3s;
+            border: 2px solid transparent;
+        }
+        /* Khi ảnh nhỏ được chọn hoặc đang active */
+        .aboutProduct_imgThumb .slick-current img {
+            opacity: 1;
+            border-color: #2c3e50;
+        }
