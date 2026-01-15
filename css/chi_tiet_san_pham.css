@@ -1,56 +1,240 @@
+#content {
+    background-color: #f5f5f5;
+}
+
+#content .container {
+    background-color: #fff;
+
+    padding: 40px 50px 40px 50px;
+}
+
+.breadcrumb {
+    display: flex;
+    font-family: 'Gotham-Medium';
+    padding: 25px 0px 15px 0px;
+    padding-left: 560px;
+    font-size: 22px;
+}
+
+.breadcrumb li a {
+    color: #c09664;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li.separator {
+    margin: 0 10px;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.breadcrumb li.active {
+    color: #c09664;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title h2 {
+    color: #212546;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 0 30px 18px;
+}
+
+.Options {
+    padding: 0 40px 0 40px;
+}
+
+.Options h3 {
+    color: #212546;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Options .optionBy .selection1 {
+    border: 4px solid #bd945f;
+    padding: 8px 30px;
+    font-family: 'Gotham-Medium';
+    text-align: center;
+}
+
+.Options .optionBy .selection1>a {
+    color: #333;
+    font-weight: bold;
+}
+
+.Options .optionBy .selection2 {
+    border: 4px solid #8c8c8c;
+    padding: 8px 30px;
+    font-family: 'Gotham-Medium';
+    color: #333;
+    text-align: center;
+}
+
+.Options .optionBy .selection2>a {
+    color: #333;
+    font-weight: bold;
+}
+
+.Options .optionBy>del {
+    padding: 20px 0 10px 0;
+    font-size: 22px;
+}
+
+.Options .optionBy>p {
+    font-size: 40px;
+    color: #bd945f;
+    font-weight: bold;
+}
+
+.Options .optionBy .commitment {
+    border: 4px solid #8c8c8c;
+    display: flex;
+    gap: 20px;
+    padding: 20px 0 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Options .optionBy .commitment>i {
+    font-size: 26px;
+}
+
+.details .optionOfDetails {
+    display: flex;
+    list-style: none;
+    padding-top: 50px;
+    padding-left: 20px;
+    position: relative;
+}
+.details .optionOfDetails::after{
+    content: '';
+    height: 3px;
+    width: 900px;
+    position: absolute;
+    top: 110%;
+    left: 190px;
+    background-color: #bd945f;
+}
+.details .optionOfDetails>li {
+    border-right: 4px solid #bd945f;
+}
+
+.details .optionOfDetails>li>a {
+    font-size: 30px;
+    padding: 0 20px 0 20px;
+    color: #bd945f;
+    font-weight: bold;
+}
+
+.details .optionOfDetails .activeItem {
+    position: relative;
+}
+
+.details .optionOfDetails .activeItem>a {
+    padding-left: 5px;
+    color: #2c2e53;
+}
+
+.details .optionOfDetails .activeItem>a::after {
+    content: '';
+    height: 4px;
+    width: 170px;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #2c2e53;
+}
+.introduceOfDetails {
+    padding: 20px 10px 20px 10px;
+    font-family: 'Gotham-Medium';
+    color: #2c2e53;
+    font-weight: bold;
+}
+.introduceOfDetails>p{
+    font-size: 20px;
+}
+
+/* Render by Slick */
 .ImgBySlick {
-            max-width: 800px;
-            margin: auto;
-        }
+    max-width: 800px;
+    margin: auto;
+}
 
-        /* Ảnh lớn */
-        .aboutProduct_imgBig {
-            margin-bottom: 15px;
-            position: relative;
-        }
-        .aboutProduct_imgBig img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
+/* Ảnh lớn */
+.aboutProduct_imgBig {
+    margin-bottom: 15px;
+    position: relative;
+}
 
-        /* Nút bấm Next/Prev tùy chỉnh */
-        .slick-prev, .slick-next {
-            z-index: 10;
-            width: 40px;
-            height: 40px;
-            background: #2c3e50 !important; /* Màu xanh đậm như ảnh mẫu */
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-        }
-        .slick-prev { left: -20px; }
-        .slick-next { right: -20px; }
-        
-        /* Thay đổi ký hiệu mũi tên (nếu dùng text) */
-        .slick-prev:before, .slick-next:before {
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            font-size: 20px;
-        }
-        .slick-prev:before { content: "\f104"; } /* Icon mũi tên trái */
-        .slick-next:before { content: "\f105"; } /* Icon mũi tên phải */
+.aboutProduct_imgBig img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
 
-        /* Ảnh nhỏ (Thumbnails) */
-        .aboutProduct_imgThumb .slick-slide {
-            padding: 0 5px;
-            cursor: pointer;
-        }
-        .aboutProduct_imgThumb img {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
-            opacity: 0.6;
-            transition: 0.3s;
-            border: 2px solid transparent;
-        }
-        /* Khi ảnh nhỏ được chọn hoặc đang active */
-        .aboutProduct_imgThumb .slick-current img {
-            opacity: 1;
-            border-color: #2c3e50;
-        }
+/* Nút bấm Next/Prev tùy chỉnh */
+.slick-prev,
+.slick-next {
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: #2c3e50 !important;
+    /* Màu xanh đậm như ảnh mẫu */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-prev {
+    left: -20px;
+}
+
+.slick-next {
+    right: -20px;
+}
+
+/* Thay đổi ký hiệu mũi tên (nếu dùng text) */
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.slick-prev:before {
+    content: "\f104";
+}
+
+/* Icon mũi tên trái */
+.slick-next:before {
+    content: "\f105";
+}
+
+/* Icon mũi tên phải */
+
+/* Ảnh nhỏ (Thumbnails) */
+.aboutProduct_imgThumb .slick-slide {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.aboutProduct_imgThumb img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+/* Khi ảnh nhỏ được chọn hoặc đang active */
+.aboutProduct_imgThumb .slick-current img {
+    opacity: 1;
+    border-color: #2c3e50;
+}
