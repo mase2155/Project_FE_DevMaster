@@ -32,10 +32,11 @@
 }
 
 .main-content .row {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
-.product-card{
-}
+
+.product-card {}
+
 .imgOfProduct img {
     width: 100%;
     display: block;
