@@ -48,24 +48,29 @@
     font-family: 'Gotham-Ultra';
     color: #bd945f;
 }
-#introduce .contentOfIntroduce > div {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px;
+.contentOfIntroduce h3 {
+    color: #c19b76; /* Màu vàng đồng */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 25px;
 }
-#introduce .contentOfIntroduce > div > input{
-    max-width: 530px;
-    height: 55px;
-    text-align: left;
-    padding: 12px 15px;
-    border: 2px solid  #bd945f;
-    font-family: 'Gotham-Medium';
-}
-#introduce .contentOfIntroduce > div > button {
-    width: 125px;
-    height: 55px;
-    background-color: #bd945f;
-    color: #fff;
-    font-family: 'Gotham-Medium';
 
+.form-contact input, 
+.form-contact textarea {
+    width: 100%;
+    margin-bottom: 15px; 
+    padding: 12px 15px;
+    border: 2px solid #c19b76; 
+    
+}
+
+.form-contact textarea {
+    height: 100px; 
+}
+
+.form-contact button {
+    background-color: #c19b76;
+    color: white;
+    padding: 10px 40px;
+    font-weight: bold;
 }

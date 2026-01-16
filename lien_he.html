@@ -18,7 +18,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
-   <!-- Begin Header -->
+        <!-- Begin Header -->
         <header>
             <div class="container">
                 <div class="header-nav">
@@ -89,7 +89,7 @@
         </header>
         <!-- End Header -->
         <!-- Begin Banner  -->
-         <section id="banner-gioi_thieu">
+        <section id="banner-gioi_thieu">
             <div class="imgOfBanner">
                 <img src="img/lien_he/banner.jpg" alt="banner-lien_he">
             </div>
@@ -100,7 +100,7 @@
         </section>
         <!-- End Banner  -->
         <!-- Begin Introduce -->
-         <section id="introduce">
+        <section id="introduce">
             <div class="container">
                 <div class="row">
                     <div class=" imgOfIntroduce col-6">
@@ -108,17 +108,31 @@
                     </div>
                     <div class="contentOfIntroduce col-6">
                         <h3>Liên hệ với chúng tôi</h3>
-                        <div>
-                            <input type="text" name="name" id="name" placeholder="Họ Và Tên">
-                            <input type="text" name="email" id="email" placeholder="Email">
-                            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Số Điện Thoại">
-                            <input type="text" name="content" id="content" placeholder="Nội Dung">
-                            <button>Gửi</button>
+                        <div class="form-contact">
+                            <form >
+
+                            <input type="text" name="name" id="name"
+                                placeholder="Họ Và Tên" required>
+
+                            <input type="email" name="email" id="email"
+                                placeholder="Email" required>
+
+                            <input type="tel" name="phoneNumber"
+                                id="phoneNumber" placeholder="Số Điện Thoại"
+                                pattern="[0-9]{10}"
+                                title="Vui lòng nhập 10 chữ số" required>
+
+                            <textarea name="content" id="content"
+                                placeholder="Nội Dung" rows="4"
+                                required></textarea>
+
+                            <button type="submit">Gửi</button>
+                        </form>
                         </div>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
         <!-- End Introduce -->
         <!-- Begin Footer -->
         <footer class="info-company">
