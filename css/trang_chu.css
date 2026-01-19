@@ -353,7 +353,7 @@
 
 /* Partner  */
 #partner {
-    width: 1920px;
+    /* width: 1920px; */
     height: 300px;
 }
 .logo-partner {
@@ -385,6 +385,7 @@
 #partner .img-logo-partner {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #partner .img-logo-partner .logo-partner {
@@ -406,7 +407,7 @@
 /* Info Contact */
 #info-contact {
     background-image: url(../img/trang_chu/banner_info-contact.jpg);
-    width: 1920px;
+    /* width: 1920px; */
     height: 300px;
     position: relative;
 }
@@ -481,6 +482,7 @@
 }
 /* Mobile */
 @media (max-width: 575px) {
+   
     #info-contact {
         padding: 40px 0;
     }
