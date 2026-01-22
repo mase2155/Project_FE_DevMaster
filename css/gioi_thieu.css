@@ -3,7 +3,7 @@
     margin-top: 140px;
     background-image: url('..//img/gioi_thieu/banner.jpg');
     width: 100%;
-    height: 470px;
+    height: 29rem;
     position: relative;
 }
 
@@ -21,18 +21,26 @@
 }
 
 #banner-gioi_thieu .contentOfBanner img {
-    width: 150px;
-    margin-bottom: 12px;
+    width: 9rem;
+    margin-bottom: 1rem;
 }
 
 #banner-gioi_thieu .contentOfBanner h2 {
-    font-size: 45px;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Gotham-Ultra';
     color: #fff;
 }
+@media (max-width: 767px) {
+    #banner-gioi_thieu {
+        height: 16rem;
+    }
 
+    #banner-gioi_thieu h2 {
+        font-size: 1.5rem;
+    }
+}
 /* Introduce */
 #introduce {
     background-color: #f5f5f5;
@@ -41,7 +49,13 @@
 #introduce .container {
     background-color: #fff;
     position: relative;
-    top: -60px;
+    top: -3.8rem;
+}
+/* Ảnh luôn co theo khung */
+#introduce img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #introduce .establish h2 {
@@ -52,13 +66,13 @@
     margin-bottom: 2rem;
     font-weight: bold;
     color: #212546;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
 #introduce .establish h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -67,13 +81,13 @@
 }
 
 #introduce .establish .row {
-    margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 5rem;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
 }
 
 #introduce .establish .row .contentOfEstablish {
-    max-width: 500px;
+    max-width: 31rem;
     font-family: 'Gotham-Medium';
     font-weight: bold;
 }
@@ -86,13 +100,13 @@
     margin-bottom: 2rem;
     font-weight: bold;
     color: #212546;
-    margin-top: 70px;
+    margin-top: 4rem;
 }
 
 #introduce .vision h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -101,15 +115,15 @@
 }
 
 #introduce .vision>img {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
 }
 
 #introduce .vision>p {
-    max-width: 1060px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
+    max-width: 66rem;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+    margin-top: 2rem;
     font-family: 'Gotham-Medium';
 }
 
@@ -121,13 +135,13 @@
     margin-bottom: 2rem;
     font-weight: bold;
     color: #212546;
-    margin-top: 70px;
+    margin-top: 4rem;
 }
 
 #introduce .mission h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -138,16 +152,42 @@
 #introduce .mission .boxOfMission .bg-white {
     display: flex;
     align-items: center;
-    padding: 20px 20px;
-    gap: 20px;
-    width: 550px;
-    height: 110px;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    width: 35rem;
+    height: 7rem;
 }
+@media (max-width: 767px) {
+    .imgOfEstablish,
+    .contentOfEstablish {
+        width: 100%;
+    }
+
+    .contentOfEstablish {
+        margin-top: 1.5rem;
+    }
+}
+
  .boxOfMission .bg-white {
     border: 3px solid #bd945f !important; 
     height: 100%; 
     align-items: center; 
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 80px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+}
+@media (max-width: 767px) {
+    .mission .col-6 {
+        width: 100%;
+    }
+
+    .boxOfMission .bg-white {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .imgOfMission img {
+        width: 50px;
+    }
 }
