@@ -1,9 +1,12 @@
 * {
+    font-family: 'Gotham-Medium';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gotham-Medium', sans-serif;
-    font-size: 16px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
 }
 
 a {

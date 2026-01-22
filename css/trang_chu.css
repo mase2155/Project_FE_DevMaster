@@ -1,135 +1,109 @@
-#banner {
-    margin-top: 60px;
-    background-image: url('../img/trang_chu/banner.jpg');
-    width: 100%;
-    height: 900px;
+#home-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+    position: relative;
 }
 
-#banner .banner-content {
-    padding-top: 200px;
-    padding-left: 50px;
-
+#home-banner img {
+    display: block;
 }
 
-#banner .banner-content h2,
-#banner .banner-content h2>span {
+.home-banner_content {
+    padding-left: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.home-banner_content h1 {
     font-family: 'Gotham-Ultra';
-    font-size: 46px;
+    text-transform: uppercase;
+    color: #2c2e53;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
 }
 
-#banner .banner-content p {
-    width: 552px;
-    text-align: justify;
+.home-banner_content span {
+    font-family: 'Gotham-Ultra';
+    color: #bd945f;
 }
 
-#banner .banner-content button {
-    background-color: #bd945f;
-    padding: 1.5rem 2rem;
+.home-banner_content p {
+    max-width: 30rem;
+    margin-bottom: 0.75rem;
+}
+
+.home-banner_btn {
     text-transform: uppercase;
     font-family: 'Gotham-Ultra';
-    font-size: 1.25rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #bd945f;
+    border: 0.2rem solid #bd945f;
     color: #fff;
-    border: 0;
-}
-/* MOBILE */
-@media (max-width: 575px) {
-    #banner .banner-content {
-        text-align: center;       /* CĂN GIỮA TEXT */
-        padding: 40px 15px;
-    }
-
-    #banner .banner-content h2 {
-        font-size: 22px;          /* GIẢM SIZE TEXT */
-        line-height: 1.4;
-    }
-
-    #banner .banner-content h2 span {
-        font-size: 24px;          /* TÊN THƯƠNG HIỆU NỔI HƠN */
-        display: block;
-        margin-top: 5px;
-    }
-
-    #banner .banner-content p {
-        font-size: 14px;          /* TEXT DỄ ĐỌC */
-        line-height: 1.6;
-        margin: 15px 0;
-    }
-
-    #banner .banner-content button {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-}
-
-/* TABLET */
-@media (max-width: 991px) {
-    #banner .banner-content h2 {
-        font-size: 28px;
-    }
-
-    #banner .banner-content p {
-        font-size: 15px;
-    }
-}
-#category {
-    background-color: #f3f3f3;
-    height: auto;
-    padding-bottom: 0;
-    margin-bottom: -60px;
-}
-
-#category .container {
     position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
 }
 
-#category .container>div {
+#home-category {
+    background-color: #f5f5f5;
+}
 
-    position: relative;
+#home-category .list-category {
     background-color: #fff;
-    top: -60px;
-    z-index: 10;
+    position: relative;
+    top: -3rem;
+    padding: 0rem 3rem;
 }
 
-#category .category-box {
-    padding-top: 40px;
-    padding-bottom: 50px;
+#home-category .list-category .col-md-3 a>img {
+    width: 10rem;
+    height: 9rem;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
-#category .category-img {
-    max-width: 178px;
-    margin: auto;
+#home-category .col-md-3 {
+    align-items: center;
+    text-align: center;
 }
 
-#category .category-box a {
-    font-family: 'Gotham-Ultra';
+#home-category .list-category .row .col-md-3 {
+    padding: 2.5rem 0 3rem 0;
+}
+
+#home-category .list-category .row a>p {
     color: #2c2e53;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gotham-Ultra';
 }
 
-/* Product */
-#product {
-    background-color: #f3f3f3;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.product-slick {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
-#product .container {
-    background-color: #fff;
-}
 
-#product h2 {
+.product-slick h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
     color: #2c2e53;
-    padding-top: 20px;
-    padding-bottom: 5px
+    padding-top: 1rem;
+    padding-bottom: 0.5rem
 }
 
-#product h2::after {
+.product-slick h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -137,24 +111,37 @@
     background-color: #bd945f;
 }
 
-#product .product-box {
-    max-width: 270px;
+.product-slick .product-box {
+    max-width: 17rem;
     margin: 0 1rem;
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
-#product .product-list {
-    max-width: 1180px;
+.product-slick .product-list {
     margin: auto;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-
-#product .product-list .slick-arrow {
+.product-slick .product-content{
+    padding: 1rem 0 0.5rem 0;
+}
+.product-slick .product-content>h3{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.product-slick .product-content .product-star{
+    color: #bd945f;
+    margin-bottom: 0;
+}
+.product-slick .product-content .product-details {
+    color: #666666;
+    margin-bottom: 0;
+}
+.product-slick .product-list .slick-arrow {
     position: absolute;
-    height: 44px;
-    width: 44px;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     border: none;
     background-color: #bd945f;
@@ -162,47 +149,50 @@
     top: 30%;
 }
 
-#product .product-list .slick-prev {
+.product-slick .product-list .slick-prev {
     right: calc(100% + 10px);
 }
 
-#product .product-list .slick-next {
+.product-slick .product-list .slick-next {
     left: calc(100% + 10px);
 }
-
 /* About us */
-#about-us {
-    height: 1180px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8)), url(../img/trang_chu/banner-about_us.jpg);
+#home-about_us {
+    position: relative;
+    height: 68rem;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6)),
+        url("../img/trang_chu/banner-about_us.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-#about-us .about-us-top {
-    padding: 96px;
+#home-about_us .banner {
+    display: none;
+}
+#home-about_us .container {
+    padding-top: 3rem;
+    padding-bottom: 9rem;
+    position: relative;
+    z-index: 1;
+}
+#home-about_us .content {
     color: #fff;
+    margin-bottom: 6rem;
 }
-
-.about-us-top-left-img {
-    width: 100%;
-    height: 100%;
-}
-
-.about-us-top-left-img img {
-    width: 100%;
-    height: 100%;
-}
-
-#about-us h2 {
+#home-about_us h2 {
     text-align: center;
     position: relative;
-    font-family: 'Gotham-Ultra';
-    text-transform: uppercase;
     margin-bottom: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
 }
 
-#about-us h2::after {
+#home-about_us h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -210,95 +200,54 @@
     background-color: #bd945f;
 }
 
-#about-us .about-us-bottom h2 {
-    color: #fff;
-}
-
-#about-us .about-us-top h3 {
-    text-transform: uppercase;
-}
-
-#about-us .about-us-top h3 span {
-    color: #fff;
+#home-about_us .contentOfTop_Right h3>span{
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 26px;
+    font-family: 'Gotham-Ultra';
 }
-
-#about-us .about-us-top p span {
-    color: #fff;
+#home-about_us .contentOfTop_Right p>span{
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Gotham-Ultra';
 }
-
-#about-us .about-us-bottom row {
-    width: 45px;
+ 
+.about-us-bottom .row .bg-white {
+    padding: 1.5rem 0 1.5rem 2rem;
 }
-
-#about-us .about-us-bottom h3 {
+.commit-card {
+    padding: 1.5rem 0 2rem 1.5rem;
+}
+.commit-card .about-us-bottom-img{
+    
+}
+.commit-card .about-us-bottom-content {
+    padding-left: 2rem;
+}
+.commit-card .about-us-bottom-content>h3{
+    color: #bd945f;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
-    color: #bd945f;
-    font-weight: bold;
-    margin-left: 23px;
-    font-size: 26px;
+    font-size: 1.5rem;
 }
-
-#about-us .about-us-bottom p {
-    font-family: 'Gotham-Medium';
-    margin-left: 23px;
-    font-size: 20px
-}
-
-#about-us .about-us-bottom .bg-white {
-    display: flex;
-    align-items: center;
-    padding: 20px 20px;
-    gap: 20px;
-    width: 550px;
-    height: 110px;
-}
-/* Mobile */
-@media (max-width: 575px) {
-    .about-us-bottom h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .about-us-bottom .bg-white {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .about-us-bottom-img {
-        margin-bottom: 15px;
-    }
-
-    .about-us-bottom h3 {
-        font-size: 18px;
-    }
-
-    .about-us-bottom p {
-        font-size: 14px;
-    }
+.commit-card .about-us-bottom-content>p{
+    font-size: 1rem;
+    color: #000;
 }
 /* News */
-.news-section .news h2 {
+#home-news .news h2 {
     text-align: center;
     position: relative;
     font-family: 'Gotham-Ultra';
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-bottom: 2rem;
+    padding-top: 6rem;
     font-weight: bold;
     color: #2c2e53;
 }
 
-.news-section .news h2::after {
+#home-news .news h2::after {
     content: '';
-    height: 8px;
-    width: 162px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -306,13 +255,14 @@
     background-color: #bd945f;
 }
 
-.news-section .row {
+#home-news .row {
     display: flex;
-    align-items: stretch;
+    margin-top: 3rem;
+    padding-bottom: 2.5rem;
 }
 
-.news-left,
-.news-left img {
+
+.news-left> img {
     height: 100%;
     width: 100%;
 }
@@ -330,20 +280,22 @@
 }
 
 .img-news-small img {
-    width: 170px;
-    height: 130px;
+    width: 12rem;
+    height: 10rem;
 }
 
-.news-section .news-right .news-item .item-text h3 {
+#home-news .news-right .news-item .item-text h3 {
+    font-size: 1rem;
     color: #bd945f;
-    font-family: 'Gotham-Medium';
 }
 
-.news-section .news-right .news-item .item-text p {
+#home-news .news-right .news-item .item-text p {
     font-family: 'Gotham-Thin';
+    font-weight: 700;
+    font-size: 0.8rem;
 }
 
-.news-section .news-right .news-more a {
+#home-news .news-right .news-more a {
     font-family: 'Gotham-Medium';
     color: #bd945f;
     margin-top: 30px;
@@ -351,64 +303,9 @@
     font-weight: bold;
 }
 
-/* Partner  */
-#partner {
-    /* width: 1920px; */
-    height: 300px;
-}
-.logo-partner {
-    width: 45%;
-}
-
-
-#partner h2 {
-    text-align: center;
-    position: relative;
-    font-family: 'Gotham-Ultra';
-    text-transform: uppercase;
-    margin-top: 115px;
-    font-weight: bold;
-    color: #2c2e53;
-}
-
-#partner h2::after {
-    content: '';
-    height: 8px;
-    width: 162px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #bd945f;
-}
-
-#partner .img-logo-partner {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#partner .img-logo-partner .logo-partner {
-    margin-top: 50px;
-    margin-right: 55px;
-    margin-bottom: 130px;
-}
-@media (min-width: 576px) {
-    .logo-partner {
-        width: 30%;
-    }
-}
-
-@media (min-width: 992px) {
-    .logo-partner {
-        width: 14%;
-    }
-}
-/* Info Contact */
 #info-contact {
     background-image: url(../img/trang_chu/banner_info-contact.jpg);
-    /* width: 1920px; */
-    height: 300px;
+    height: 16rem;
     position: relative;
 }
 
@@ -417,26 +314,25 @@
     align-items: flex-end;
     justify-content: space-between;
     text-align: left;
-    margin-right: 80px;
 }
 
 #info-contact .content-info-contact {
     position: relative;
-    padding-bottom: 20px;
-    flex: 1;
+    padding-bottom: 1rem;
     text-align: left;
-    margin-left: 150px;
+    margin-left: 0;
 }
-
+#info-contact .form-info-contact {
+    padding-bottom: 1rem;
+}
 #info-contact .container .row .content-info-contact h3 {
     color: #fff;
-    margin-top: 120px;
+    margin-top: 5rem;
     font-family: 'Gotham-Medium';
-    font-size: 26px;
     display: inline-block;
     position: relative;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 1.2rem;
 }
 
 #info-contact .container .row .content-info-contact h3 span {
@@ -456,84 +352,74 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 162px;
-    height: 8px;
+    width: 10rem;
+    height: 0.5rem;
     background-color: #fff;
 }
-
+#info-contact .form-info-contact h4 {
+    color: #fff;
+    font-size: 1rem;
+}
 #info-contact .form-info-contact input {
-    width: 300px;
-    height: 40px;
+    width: 16rem;
+    height: 3rem;
+    padding-left: 1rem;
 }
 
 #info-contact .form-info-contact button {
-    width: 80px;
-    height: 40px;
+    width: 5rem;
+    height: 3rem;
     background-color: #fff;
+    margin-left: 0.5rem;
 }
 
 .img-chair-decor {
     position: absolute;
     top: 0;
-    left: 35px;
-    bottom: 50px;
+    left: 2.2rem;
+    bottom: 3rem;
     transform: translateY(-40%);
-    width: 370px;
+    width: 10rem;
 }
-/* Mobile */
-@media (max-width: 575px) {
-   
-    #info-contact {
-        padding: 40px 0;
-    }
-
-    .content-info-contact h3 {
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
-
-    .form-info-contact h4 {
-        font-size: 18px;
-    }
-
-    .form-info-contact form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .form-info-contact input,
-    .form-info-contact button {
-        width: 100%;
-    }
-
-    .img-chair-decor {
-        display: none; /* Ảnh trang trí nên ẩn trên mobile */
-    }
+/* Partner */
+#partner {
+    /* width: 1920px; */
+    height: 300px;
 }
-/* Responsive cho Mobile và Tablet */
-/* MOBILE */
-@media (max-width: 575px) {
-    h2 { font-size: 22px; }
-    h3 { font-size: 18px; }
-    p  { font-size: 14px; }
-
-    #banner .banner-content {
-        text-align: center;
-    }
-
-    .news-item {
-        flex-direction: column;
-    }
-
-    .news-item img {
-        width: 100%;
-    }
+.logo-partner {
+    width: 45%;
 }
 
-/* TABLET */
-@media (max-width: 991px) {
-    .about-us-top-right-img img {
-        width: 100%;
-    }
+
+#home-partner .title h2 {
+    text-align: center;
+    position: relative;
+    font-family: 'Gotham-Ultra';
+    text-transform: uppercase;
+    margin-top: 115px;
+    font-weight: bold;
+    color: #2c2e53;
+}
+
+#home-partner .title h2::after {
+    content: '';
+    height: 8px;
+    width: 162px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bd945f;
+}
+
+#home-partner .img-logo-partner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#home-partner .img-logo-partner .logo-partner {
+    margin-top: 50px;
+    margin-right: 55px;
+    margin-bottom: 130px;
 }
