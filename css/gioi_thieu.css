@@ -67,6 +67,7 @@
     font-weight: bold;
     color: #212546;
     margin-top: 3rem;
+    padding-top: 2rem;
 }
 
 #introduce .establish h2::after {
