@@ -7,50 +7,43 @@
 }
 .optionsOfPrice {
     align-items: center;
-    padding: 20px 0;
-    display: flex;
+    padding: 1rem 0;
 }
 
-#content .optionsOfPrice .col-8 {
-    display: flex;
-    gap: 20px;
+#content .optionsOfPrice .col-md-8 {
+    gap: 1rem;
     align-items: center;
 }
 
-.optionsOfPrice .col-8 {
+.option-price {
     display: flex;
+    flex-wrap: wrap;      /* ✅ QUAN TRỌNG */
+    gap: 1rem;
     align-items: center;
-    padding: 10px;
+    justify-content: flex-start;
 }
 
-.optionsOfPrice .col-8 .option-price {
-    text-align: center;
-    display: flex;
-    white-space: nowrap;
-    gap: 30px;
-    margin-left: 300px;
-}
-
-.optionsOfPrice .col-8 .option-price>p {
+.optionsOfPrice .option-price>p {
     color: #2c2e53;
     font-family: 'Gotham-Medium';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
+    padding-top: 1rem;
 }
 
-.optionsOfPrice .col-8 .option-price>a {
+.optionsOfPrice  .option-price>a {
     color: #bd945f;
     font-family: 'Gotham-Medium';
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
-.optionsOfPrice .col-4 {
+.optionsOfPrice .col-md-4 {
     align-items: center;
 }
 .viewSelect {
     position: relative; 
     display: inline-block; 
-    margin-left: 160px;
+    padding-left: 1rem;
 }
 
 .viewSelect > a {
@@ -58,8 +51,8 @@
     text-decoration: none;
     color: #2c2e53;
     font-weight: bold;
-    font-size: 18px; 
-    padding: 10px 0;
+    font-size: 1rem; 
+    padding: 0.5rem 0;
 }
 
 
@@ -68,11 +61,11 @@
     background-color: #fff;
     position: absolute;
     top: 100%; 
-    width: 170px;
+    width: 11rem;
     border: 2px solid #bd945f;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     list-style: none;
-    padding:  0 10px;
+    padding:  0 0.5rem;
     margin: 0;
 }
 .menuOfOptions >li{
@@ -93,19 +86,35 @@
 
 .menuOfOptions li a {
     display: block;
-    padding: 10px 15px;
+    padding: 0.5rem 1rem;
     color: #2c2e53;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .menuOfOptions li a:hover {
     background-color: #f8f8f8;
     color: #bd945f;
 }
+@media (max-width: 768px) {
+    .option-price {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .viewSelect {
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .option-price {
+        margin-left: 18rem;
+    }
+}
 #content .container {
     background-color: #fff;
-    padding: 60px 60px;
+    padding: 3.5rem 3.5rem 1rem 3.5rem;
 }
 
 #content .container h2 {
@@ -114,13 +123,13 @@
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    top: -30px;
+    top: -2rem;
 }
 
 #content .container h2::after {
     content: '';
-    height: 8px;
-    width: 170px;
+    height: 0.5rem;
+    width: 11rem;
     position: absolute;
     top: 100%;
     left: 0;
@@ -139,15 +148,23 @@
     text-align: center;
 }
 
-/* Column1 */
-#content .container .column1 .col-3 .product-card>h3 {
-    font-family: 'Gotham-Ultra';
-    color: #2c2e53;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-}
 
+.product-card h3{
+    color: #2c2e53;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.product-card .details{
+    color: #666666;
+}
+.product-card .rateByStars{
+    color: #bd945f;
+}
+.product-card .price{
+    color: black;
+}
 #content .container .column1 .col-3 .product-card .details {
     font-family: 'Gotham-Medium';
 }
@@ -161,13 +178,13 @@
     font-weight: bold;
 }
 
-/* Column2 */
+
 #content .container .column2 .col-3 .product-card h3 {
     font-family: 'Gotham-Ultra';
     color: #2c2e53;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 #content .container .column2 .col-3 .product-card .details {
@@ -183,13 +200,13 @@
     font-weight: bold;
 }
 
-/* Column3  */
+
 #content .container .column3 .col-3 .product-card h3 {
     font-family: 'Gotham-Ultra';
     color: #2c2e53;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.2rem
 }
 
 #content .container .column3 .col-3 .product-card .details {
