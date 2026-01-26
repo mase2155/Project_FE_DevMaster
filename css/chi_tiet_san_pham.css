@@ -1,27 +1,27 @@
 #content {
     background-color: #f5f5f5;
-    padding: 40px 0;
+    padding: 2.5 0;
 }
 
 #content .container {
-    padding: 20px 50px 40px 50px;
+    padding: 1rem 3rem 2.5rem 3rem;
 }
 
 .category {
-    padding-top: 110px;
+    padding-top: 8rem;
 }
 
 .breadcrumb {
     display: flex;
     font-family: 'Gotham-Medium';
-    padding-top: 20px;
-    padding-left: 350px;
-    font-size: 22px;
+    padding-top: 1.5rem;
+    padding-left: 22rem;
+    font-size: 1.5rem;
 }
 
 .breadcrumb li a {
     color: #c09664;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -30,31 +30,33 @@
 }
 
 .breadcrumb li.separator {
-    margin: 0 10px;
+    margin: 0 0.5rem;
     color: #555;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
+    padding-top: 0.4rem;
 }
 
 .breadcrumb li.active {
     color: #c09664;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: bold;
+    padding-top: 0.4rem;
 }
 .aboutProduct {
     background-color: #fff;
-    padding: 30px 50px;
-    margin-bottom: 50px;
+    padding: 2.5rem 3rem;
+    margin-bottom: 3rem;
 }
 .title h2 {
     color: #212546;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0 0 10px 18px;
+    padding: 0 0 0.5rem 1.2rem;
 }
 
 .Options {
-    padding: 0 40px 0 40px;
+    padding: 0 2.5rem 0 2.5rem;
 }
 
 .Options h3 {
@@ -64,8 +66,8 @@
 }
 
 .Options .optionBy .selection1 {
-    border: 4px solid #bd945f;
-    padding: 8px 30px;
+    border: 0.4rem solid #bd945f;
+    padding: 0.5rem 2rem;
     font-family: 'Gotham-Medium';
     text-align: center;
 }
@@ -76,8 +78,8 @@
 }
 
 .Options .optionBy .selection2 {
-    border: 4px solid #8c8c8c;
-    padding: 8px 30px;
+    border: 0.4rem solid #8c8c8c;
+    padding: 0.5rem 2rem;
     font-family: 'Gotham-Medium';
     color: #333;
     text-align: center;
@@ -89,54 +91,54 @@
 }
 
 .Options .optionBy>del {
-    padding: 20px 0 10px 0;
-    font-size: 22px;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .Options .optionBy>p {
-    font-size: 40px;
+    font-size: 2.4rem;
     color: #bd945f;
     font-weight: bold;
 }
 
 .Options .optionBy .commitment {
-    border: 4px solid #8c8c8c;
+    border: 0.4rem solid #8c8c8c;
     display: flex;
-    gap: 20px;
-    padding: 20px 0 0 20px;
-    font-size: 20px;
+    gap: 1rem;
+    padding: 1rem 0 0 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 .Options .optionBy .commitment>i {
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 
 .details .optionOfDetails {
     display: flex;
     list-style: none;
-    padding-top: 50px;
-    padding-left: 20px;
+    padding-top: 3rem;
+    padding-left: 1rem;
     position: relative;
 }
 
 .details .optionOfDetails::after {
     content: '';
-    height: 3px;
-    width: 900px;
+    height: 0.2rem;
+    width: 48rem;
     position: absolute;
     top: 110%;
-    left: 190px;
+    left: 12rem;
     background-color: #bd945f;
 }
 
 .details .optionOfDetails>li {
-    border-right: 4px solid #bd945f;
+    border-right: 0.4rem solid #bd945f;
 }
 
 .details .optionOfDetails>li>a {
-    font-size: 30px;
-    padding: 0 20px 0 20px;
+    font-size: 2rem;
+    padding: 0 1rem 0 1rem;
     color: #bd945f;
     font-weight: bold;
 }
@@ -146,14 +148,14 @@
 }
 
 .details .optionOfDetails .activeItem>a {
-    padding-left: 5px;
+    padding-left: 0.3rem;
     color: #2c2e53;
 }
 
 .details .optionOfDetails .activeItem>a::after {
     content: '';
-    height: 4px;
-    width: 170px;
+    height: 0.2rem;
+    width: 11rem;
     position: absolute;
     top: 120%;
     left: 0;
@@ -161,39 +163,39 @@
 }
 
 .introduceOfDetails {
-    padding: 20px 10px 20px 10px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
     font-family: 'Gotham-Medium';
     color: #2c2e53;
     font-weight: bold;
 }
 
 .introduceOfDetails>p {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 /* Render by Slick */
 .ImgBySlick {
-    max-width: 800px;
+    max-width: 50rem;
     margin: auto;
 }
 
 .aboutProduct_imgBig {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .aboutProduct_imgBig img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 0.2rem;
 }
 
 /* Nút bấm Next/Prev tùy chỉnh */
 .slick-prev,
 .slick-next {
     z-index: 90;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     background: #2c3e50 !important;
     
     display: flex ;
@@ -202,18 +204,18 @@
 }
 
 .aboutProduct_imgThumb .slick-slide {
-    padding: 0 5px;
+    padding: 0 0.3rem;
 }
 
 .aboutProduct_imgThumb img {
     width: 100%;
-    height: 100px;
-    border: 2px ;
+    height: 7rem;
+    border: 0.2rem ;
 }
 
 .sameAsProduct {
     background-color: #fff;
-    padding: 40px 50px;
+    padding: 2.5rem 3rem;
 }
 
 .sameAsProduct h2 {
@@ -227,8 +229,8 @@
 
 .sameAsProduct h2::after {
     content: '';
-    height: 8px;
-    width: 150px;
+    height: 0.5rem;
+    width: 10rem;
     position: absolute;
     top: 100%;
     left: 0;
@@ -236,7 +238,7 @@
 }
 
 .table-product {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
 
 .list-product {
@@ -247,9 +249,9 @@
     color: #2c2e53;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 1rem;
     font-family: 'Gotham-Ultra';
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .product-card .details {
