@@ -10,16 +10,15 @@ Dự án tập trung xây dựng giao diện người dùng chuyên nghiệp cho
 * Data Process : Xử lý render dữ liệu động linh hoạt thay vì fix cứng HTML.
 
 ###  Các tính năng đã hoàn thiện
-Dựa trên lộ trình triển khai thực tế của dự án:
-* Layout chuẩn : Hoàn thành Code Header/Footer và các trang con (Trang chủ, Sản phẩm, Tin tức, Liên hệ).
-* Menu Mobile : Hệ thống menu responsive mượt mà cho màn hình nhỏ.
+
+* Layout : Hoàn thành Code Header/Footer và các trang con (Trang chủ, Sản phẩm, Tin tức, Liên hệ).
+* Phù hợp nhiều thiết bị : Hoàn thành Responsive mượt mà cho đa dạng chế độ xem ( Desktop , Tablet và Mobile)
 * Render dữ liệu : Sử dụng JS + DOM/jQuery để hiển thị danh sách sản phẩm và bài viết.
 * Thành phần bổ trợ : Tích hợp Slick Slider cho phần trình chiếu banner và đối tác.
-* Giỏ hàng : Xây dựng logic phần giỏ hàng cơ bản.
 
 ### Công nghệ sử dụng
 * Frontend Core: HTML5, CSS3 .
-* Libraries: JavaScript , jQuery, Bootstrap.
+* Libraries: JavaScript , jQuery, Bootstrap , Slick
 * Tools: Visual Studio Code, Git , Github
 
 ###  Cấu trúc thư mục
