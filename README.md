@@ -23,7 +23,7 @@ Dự án tập trung xây dựng giao diện người dùng chuyên nghiệp cho
 
 ###  Cấu trúc thư mục
 
-img            --- hình ảnh được sử dụng trong dự án
-css            --- các file định dạng BEM
-trang_chu.html --- trang chủ chính của dự án
-README.md      --- tài liệu của dự án
+* img            --- hình ảnh được sử dụng trong dự án
+* css            --- các file định dạng BEM
+* trang_chu.html --- trang chủ chính của dự án
+* README.md      --- tài liệu của dự án
