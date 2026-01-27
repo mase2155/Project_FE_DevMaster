@@ -24,7 +24,7 @@ Dựa trên lộ trình triển khai thực tế của dự án:
 
 ###  Cấu trúc thư mục
 
-├── img/            # Hình ảnh
-├── css/            # Các file style định dạng (BEM)
-├── trang_chu.html  # Trang chủ chính
-└── README.md       # Tài liệu dự án
+img            --- hình ảnh được sử dụng trong dự án
+css            --- các file định dạng BEM
+trang_chu.html --- trang chủ chính của dự án
+README.md      --- tài liệu của dự án
